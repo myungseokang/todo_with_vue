@@ -56,4 +56,9 @@ $ firebase init
 # 5. /index.html -> Yes
 # 6. index.html Overwrite? -> No
 # 7. Complete!
+
+# Do this command if everything is complete
+$ firbase deploy
+
+# Success!
 ```
