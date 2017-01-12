@@ -3,10 +3,11 @@
     <img src="./assets/logo.png">
     <hello/>
     <input
+      class="new-todo-text"
       v-model.trim="newTodoText"
       @keyup.enter="addTodo"
       placeholder="Add new todo">
-    <ul>
+    <ul class="todo-list">
       <li v-for="(todo, index) in todos">
         <input
           :value="todo.text"
@@ -67,5 +68,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.todo-list {
+  padding: 0;
+  list-style: none;
 }
 </style>
